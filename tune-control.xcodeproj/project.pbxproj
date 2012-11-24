@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		4CF0114C166173ED004A508E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF0114B166173ED004A508E /* Foundation.framework */; };
 		4CF0114F166173ED004A508E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0114E166173ED004A508E /* main.m */; };
-		4CF01153166173ED004A508E /* tune_control.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4CF01152166173ED004A508E /* tune_control.1 */; };
+		4CF0115A16617506004A508E /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF0115916617506004A508E /* ScriptingBridge.framework */; };
+		4CF0115C16617512004A508E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF0115B16617512004A508E /* AppKit.framework */; };
+		4CF011691661753E004A508E /* BTHiTunesInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF011631661753E004A508E /* BTHiTunesInterface.m */; };
+		4CF0116A1661753E004A508E /* BTHSpotifyInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF011671661753E004A508E /* BTHSpotifyInterface.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +22,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				4CF01153166173ED004A508E /* tune_control.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -30,7 +32,16 @@
 		4CF0114B166173ED004A508E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CF0114E166173ED004A508E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CF01151166173ED004A508E /* tune-control-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tune-control-Prefix.pch"; sourceTree = "<group>"; };
-		4CF01152166173ED004A508E /* tune_control.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = tune_control.1; sourceTree = "<group>"; };
+		4CF0115916617506004A508E /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		4CF0115B16617512004A508E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4CF011601661753E004A508E /* BTHPlayerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTHPlayerInterface.h; sourceTree = "<group>"; };
+		4CF011621661753E004A508E /* BTHiTunesInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTHiTunesInterface.h; sourceTree = "<group>"; };
+		4CF011631661753E004A508E /* BTHiTunesInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTHiTunesInterface.m; sourceTree = "<group>"; };
+		4CF011641661753E004A508E /* iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
+		4CF011661661753E004A508E /* BTHSpotifyInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTHSpotifyInterface.h; sourceTree = "<group>"; };
+		4CF011671661753E004A508E /* BTHSpotifyInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTHSpotifyInterface.m; sourceTree = "<group>"; };
+		4CF0116B16617565004A508E /* Spotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
+		4CF0117216617C63004A508E /* tune-control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tune-control.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF0115C16617512004A508E /* AppKit.framework in Frameworks */,
 				4CF0114C166173ED004A508E /* Foundation.framework in Frameworks */,
+				4CF0115A16617506004A508E /* ScriptingBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,8 @@
 		4CF0114A166173ED004A508E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CF0115916617506004A508E /* ScriptingBridge.framework */,
+				4CF0115B16617512004A508E /* AppKit.framework */,
 				4CF0114B166173ED004A508E /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -73,8 +88,9 @@
 		4CF0114D166173ED004A508E /* tune-control */ = {
 			isa = PBXGroup;
 			children = (
+				4CF0115D1661753E004A508E /* Player Connector */,
+				4CF0117216617C63004A508E /* tune-control.h */,
 				4CF0114E166173ED004A508E /* main.m */,
-				4CF01152166173ED004A508E /* tune_control.1 */,
 				4CF01150166173ED004A508E /* Supporting Files */,
 			);
 			path = "tune-control";
@@ -86,6 +102,36 @@
 				4CF01151166173ED004A508E /* tune-control-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CF0115D1661753E004A508E /* Player Connector */ = {
+			isa = PBXGroup;
+			children = (
+				4CF011601661753E004A508E /* BTHPlayerInterface.h */,
+				4CF011611661753E004A508E /* iTunes Interface */,
+				4CF011651661753E004A508E /* Spotify Interface */,
+			);
+			path = "Player Connector";
+			sourceTree = "<group>";
+		};
+		4CF011611661753E004A508E /* iTunes Interface */ = {
+			isa = PBXGroup;
+			children = (
+				4CF011621661753E004A508E /* BTHiTunesInterface.h */,
+				4CF011631661753E004A508E /* BTHiTunesInterface.m */,
+				4CF011641661753E004A508E /* iTunes.h */,
+			);
+			path = "iTunes Interface";
+			sourceTree = "<group>";
+		};
+		4CF011651661753E004A508E /* Spotify Interface */ = {
+			isa = PBXGroup;
+			children = (
+				4CF011661661753E004A508E /* BTHSpotifyInterface.h */,
+				4CF011671661753E004A508E /* BTHSpotifyInterface.m */,
+				4CF0116B16617565004A508E /* Spotify.h */,
+			);
+			path = "Spotify Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF0114F166173ED004A508E /* main.m in Sources */,
+				4CF011691661753E004A508E /* BTHiTunesInterface.m in Sources */,
+				4CF0116A1661753E004A508E /* BTHSpotifyInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +242,7 @@
 		4CF01157166173ED004A508E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tune-control/tune-control-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -203,6 +252,7 @@
 		4CF01158166173ED004A508E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tune-control/tune-control-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -228,6 +278,7 @@
 				4CF01158166173ED004A508E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
