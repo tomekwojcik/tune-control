@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'tune-control' target in the 'tune-control' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
