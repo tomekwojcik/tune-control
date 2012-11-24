@@ -29,7 +29,7 @@
 		4CF01147166173ED004A508E /* tune-control */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "tune-control"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF0114B166173ED004A508E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CF0114E166173ED004A508E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4CF01151166173ED004A508E /* tune-control-Prefix.pch */ = {isa = PBXFileReference; path = "tune-control-Prefix.pch"; sourceTree = "<group>"; };
+		4CF01151166173ED004A508E /* tune-control-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tune-control-Prefix.pch"; sourceTree = "<group>"; };
 		4CF01152166173ED004A508E /* tune_control.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = tune_control.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
