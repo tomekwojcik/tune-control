@@ -54,7 +54,7 @@ tune-control is licensed under MIT License. See `LICENSE`_ for more details.
 Credits
 -------
 
-Flask-HTAuth is developed by `BTHLabs`_.
+tune-control is developed by `BTHLabs`_.
 
 .. _LICENSE: http://github.com/tomekwojcik/tune-control/blob/master/LICENSE
 .. _BTHLabs: http://www.bthlabs.pl/
